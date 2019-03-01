@@ -15,14 +15,11 @@ class App extends Component {
     }
 
   }
-  
+
   render() {
-
-
-
     return (
       <div className="App">
-        <Navbar leftMenuState={this.toggleLeftSlide} rightMenuState={this.state.rightSideOpen} />
+        <Navbar/>
       </div>
     );
   }

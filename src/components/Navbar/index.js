@@ -15,12 +15,22 @@ class Navbar extends React.Component {
     }
 
     handleLeftClick() {
+        if (this.state.rightActive === true) {
+            this.setState(
+                {rightActive: !this.state.rightActive,}
+            );
+        }
         this.setState(
             {leftActive: !this.state.leftActive,}
         );
     }
 
     handleRightClick() {
+        if (this.state.leftActive === true) {
+            this.setState(
+                {leftActive: !this.state.leftActive,}
+            );
+        }
         this.setState(
             {rightActive: !this.state.rightActive,}
         );
