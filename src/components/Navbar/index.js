@@ -50,13 +50,13 @@ class Navbar extends React.Component {
                 </div>
 
                 <nav>
-                    <button id='left-icon' onClick={this.handleLeftClick.bind(this)}>
+                    <button className={this.state.leftActive ? 'button-active' : null} id='left-icon' onClick={this.handleLeftClick.bind(this)}>
                         <MailIcon/>
                     </button>
                     <a href='/#' title='logo' className='logo'>
                         <h1>APP</h1>                                
                     </a>
-                    <button className={this.state.rightActive ? 'right-active' : 'right-hidden'} onClick={this.handleRightClick.bind(this)}>
+                    <button className={this.state.rightActive ? 'button-active' : null} onClick={this.handleRightClick.bind(this)}>
                         <span/>
                         <span/>
                         <span/>

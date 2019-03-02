@@ -52,21 +52,27 @@ button span {
 
 //MENU MENU MENU MENU MENU MENU MENU
 
-.left-hidden {
-    
-}
+
 
 .left-active {
     animation: showLeft 1s forwards;
 }
-
-.right-hidden {
-
+.button-active {
+    background: $brandcolor;
+    svg {
+        fill: $navbar;
+    }
+    span {
+        background: $navbar;
+    }
 }
+
+
 
 .right-active {
     animation: showRight 1s forwards;
-}   
+}
+
 
 .nav-left {
     padding-top: 10px;
