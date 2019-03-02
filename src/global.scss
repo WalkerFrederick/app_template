@@ -1,7 +1,9 @@
 $brandcolor: #DAE1E7;
 $navbar: #22292F;
-$background: #3D4852;
 $alt-background: #B8C2CC;
+
+
+
 
 
 //tailwind css colors because I think they are pretty, deal with it
@@ -97,3 +99,15 @@ $pink-base: #F66D9B;
 $pink-dark: #EB5286;
 $pink-darker: #6F213F;
 $pink-darkest: #451225;
+
+//colors for project
+$primary: $red-base;
+$primary-light: $red-lighter;
+$primary-dark: $red-darker;
+
+$secondary: $blue-base;
+$secondary-light: $blue-lighter;
+$secondary-dark: $blue-darker;
+
+$background: $grey-darker;
+$links: $orange-base;
