@@ -1,5 +1,6 @@
 {
   "name": "app_template",
+  "homepage": "/appie",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

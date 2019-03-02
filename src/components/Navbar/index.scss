@@ -55,7 +55,7 @@ button span {
 
 
 .left-active {
-    animation: showLeft 1s forwards;
+    animation: showLeft 0.6s forwards;
 }
 .button-active {
     background: $brandcolor;
@@ -70,7 +70,7 @@ button span {
 
 
 .right-active {
-    animation: showRight 1s forwards;
+    animation: showRight 0.6s forwards;
 }
 
 
