@@ -41,19 +41,31 @@ class Navbar extends React.Component {
 
     render() {
         return (
-            <nav>
-                <button className={this.state.leftActive ? 'left-active' : 'left-hidden'} onClick={this.handleLeftClick.bind(this)}>
-                    <MailIcon/>
-                </button>
-                <a href='/#' title='logo' className='logo'>
-                    <h1>APP</h1>                                
-                </a>
-                <button className={this.state.rightActive ? 'right-active' : 'right-hidden'} onClick={this.handleRightClick.bind(this)}>
-                    <span/>
-                    <span/>
-                    <span/>
-                </button>
-            </nav>
+            <div className="navigation-container">
+
+                <div className={`nav-left ${this.state.leftActive ? 'left-active' : 'left-hidden'}`}>
+                
+                </div>
+
+                <nav>
+                    <button onClick={this.handleLeftClick.bind(this)}>
+                        <MailIcon/>
+                    </button>
+                    <a href='/#' title='logo' className='logo'>
+                        <h1>APP</h1>                                
+                    </a>
+                    <button className={this.state.rightActive ? 'right-active' : 'right-hidden'} onClick={this.handleRightClick.bind(this)}>
+                        <span/>
+                        <span/>
+                        <span/>
+                    </button>
+                </nav>
+
+                <div className={`nav-right ${this.state.rightActive ? 'right-active' : 'right-hidden'}`}>
+                
+                </div>
+
+            </div>
         )
     }
 

@@ -1,16 +1,21 @@
 @import '../../global.scss';
 
 nav {
+    position: fixed;
     background: $navbar;
     color: $brandcolor;
     box-shadow: 0px 4px 4px 0px rgba($color: #000000, $alpha: 0.14);
     width: 100%;
     height: 64px;
+    z-index: 1000;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+
+
 svg {
     height: 60%;
     width: 30px;
@@ -48,11 +53,11 @@ button span {
 //MENU MENU MENU MENU MENU MENU MENU
 
 .left-hidden {
-
+    
 }
 
 .left-active {
-    background: red;
+    animation: showLeft 1s forwards;
 }
 
 .right-hidden {
@@ -60,5 +65,47 @@ button span {
 }
 
 .right-active {
-    background: blue;
+    animation: showRight 1s forwards;
+}
+
+.nav-left {
+    padding-top: 10px;
+    background: $brandcolor;
+    width: 75%;
+    max-width: 400px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    box-shadow: 4px 4px 4px 0px rgba($color: #000000, $alpha: 0.14);
+
+}
+
+.nav-right {
+    padding-top: 10px;
+    background: $brandcolor;
+    width: 75%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    box-shadow: 4px 4px 4px 0px rgba($color: #000000, $alpha: 0.14);
+    
+}
+
+@keyframes showLeft {
+    from {
+        left: -100;
+    }
+    to {
+        left: 0;
+    }
+}
+@keyframes showRight {
+    from {
+        right: -100%;
+    }
+    to {
+        right: 0;
+    }
 }
