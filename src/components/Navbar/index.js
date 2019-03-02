@@ -3,6 +3,8 @@ import './index.scss'
 
 import MailIcon from '../Icons/mail';
 
+import RightSlide from './RightSlide'
+
 class Navbar extends React.Component {
 
     constructor(props) {
@@ -48,7 +50,7 @@ class Navbar extends React.Component {
                 </div>
 
                 <nav>
-                    <button onClick={this.handleLeftClick.bind(this)}>
+                    <button id='left-icon' onClick={this.handleLeftClick.bind(this)}>
                         <MailIcon/>
                     </button>
                     <a href='/#' title='logo' className='logo'>
@@ -62,7 +64,7 @@ class Navbar extends React.Component {
                 </nav>
 
                 <div className={`nav-right ${this.state.rightActive ? 'right-active' : 'right-hidden'}`}>
-                
+                    <RightSlide/>
                 </div>
 
             </div>

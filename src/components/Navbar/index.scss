@@ -82,7 +82,7 @@ button span {
 }
 
 .nav-right {
-    padding-top: 10px;
+    padding-top: 64px;
     background: $brandcolor;
     width: 75%;
     max-width: 400px;
@@ -108,5 +108,29 @@ button span {
     }
     to {
         right: 0;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    nav {
+        justify-content: flex-start;
+    }
+    .logo {
+        width: auto;
+        text-align: left;
+        padding: 0 25px;
+    }
+    button {
+        width: 5%;
+    }
+    #left-icon {
+        background: $brandcolor;
+        width: 64px;
+        svg {
+            fill: $navbar;
+        }
+    }
+    .RightSlide {
+
     }
 }
