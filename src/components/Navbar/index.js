@@ -56,7 +56,7 @@ class Navbar extends React.Component {
                     <a href='/#' title='logo' className='logo'>
                         <h1>APP</h1>                                
                     </a>
-                    <button className={this.state.rightActive ? 'button-active' : null} onClick={this.handleRightClick.bind(this)}>
+                    <button className={this.state.rightActive ? 'button-active' : null} id='right-icon' onClick={this.handleRightClick.bind(this)}>
                         <span/>
                         <span/>
                         <span/>
