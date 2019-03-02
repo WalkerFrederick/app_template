@@ -1,3 +1,5 @@
+@import './global.scss';
+
 .App {
   text-align: center;
   height: 100%;
@@ -33,4 +35,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+.arrow {
+  fill: $background;
+  height: 16px;
 }
