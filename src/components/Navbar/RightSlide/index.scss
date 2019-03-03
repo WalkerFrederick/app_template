@@ -47,7 +47,7 @@
         z-index: 1001;
     }
     .RightSlide {
-        color: $brandcolor;
+        color: $grey-lighter;
         position: fixed;
         top: 0;
         right: 0;
@@ -79,7 +79,8 @@
             align-items: center;
         }
         li:hover {
-            background: $alt-background;
+            background: none;
+            border-bottom: 3px solid $grey-lighter; 
         }
         span {
             display: block;
